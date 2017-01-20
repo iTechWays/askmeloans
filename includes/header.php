@@ -1,4 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>Ask Me Loans - Home page</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
 <header>
+
 <div class="topbar"></div>
 
 <nav class="navbar navbar-default">
@@ -32,14 +48,14 @@
             </ul-->
             <ul class="nav navbar-nav navbar-right right-nav">
               <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help Center</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Track Application</a></li>
+              <li><a href="trackapplication.php"><span class="glyphicon glyphicon-map-marker"></span> Track Application</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contactus</a></li>
 			  <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> RequestCallback</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-<div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+<div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation" style="background:rgba(25, 61, 90, 1);">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -48,11 +64,11 @@
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav container-fluid">
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Loan Types</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Apply Loan</a></li>
+                <li><a href="apply-now.php"><span class="glyphicon glyphicon-earphone"></span> Apply Loan</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Loans</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Investments</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Insurance</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Financial Tools</a></li>
+                <li><a href="emi.php"><span class="glyphicon glyphicon-earphone"></span>Emi Calculator</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Financial Tools</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Financial Tools</a></li>
             </ul>

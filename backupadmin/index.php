@@ -1,24 +1,11 @@
-<script type="text/javascript">
-    function noBack() { window.history.forward(); }
-    noBack();
-    window.onload = noBack;
-    window.onpageshow = function (evt) { if (evt.persisted) noBack(); }
-    window.onunload = function () { void (0); }
-</script>
 <?php
 session_start();
 include "config.php";
-
 ?>
-<style>
-.error{
-    color: red;
-}
-</style>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <div class="logo"></div>
 <div class="login-block">
-    <h1>Admin login</h1>
+    <h1>Login</h1>
 	<form method="post" action="logincheck.php" id="log">
     <input type="text" value="" name="email" placeholder="Email" id="email" />
     <input type="password" value="" placeholder="Password" name="password" id="password" />
@@ -56,15 +43,15 @@ $("#log").validate
 </script>
 <style>
 body {
-    background: url('images/login-bg.png') no-repeat fixed center center;
+    background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: Montserrat;
 }
 
 .logo {
-    width: 263px;
-    height: 67px;
-    background: url('images/logo.png') no-repeat;
+    width: 213px;
+    height: 36px;
+    background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
     margin: 30px auto;
 }
 
@@ -73,7 +60,7 @@ body {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    border: 2px solid #ff656c;
+    border-top: 5px solid #ff656c;
     margin: 0 auto;
 }
 
@@ -84,7 +71,6 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
-	border-bottom:1px solid #cacaca;
 }
 
 .login-block input {

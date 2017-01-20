@@ -54,7 +54,7 @@ $r=str_pad($e+1, "1", STR_PAD_LEFT);
 				}
 			} }
 			?>
-  <form role="form" method="post" action="" id="reg">
+  <form role="form" method="post" action="">
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
                         <div class="step1">
@@ -66,6 +66,7 @@ $r=str_pad($e+1, "1", STR_PAD_LEFT);
                             <div class="col-md-6">
                                 <label for="exampleInputEmail1">Type Of Loan</label>
                                 <select class="form-control" id="exampleInputEmail1" name="loan">
+								<option></option>
 								<option>Home Loan</option>
 								<option>Business Loan</option>
 								<option>Personal Loan</option>
@@ -107,6 +108,7 @@ $r=str_pad($e+1, "1", STR_PAD_LEFT);
 						<div class="col-md-12">
                                 <input type="hidden" name="message" class="form-control" id="exampleInputEmail1" value="Welcome to Ask me Loan">
                             </div>
+							
                         <ul class="list-inline" align="center">
                             <li><button type="submit" name="submit" class="btn btn-primary next-step" align="center">Save</button></li>&emsp; 
 							<li><button type="reset" name="reset" class="btn btn-primary next-step" align="center">Reset</button></li>

@@ -9,6 +9,8 @@
 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 
 </head>
 
@@ -17,149 +19,250 @@
 <div>
 <?php include "includes/header.php";?>
 </div>
-<!-- Header End 
 
-<!-- Main body Content Start -->
-<!-- Search bar start -->
-		<section>
-		<div class="search-background">
-            <img src="assets/img/search-back.jpg">
-        
-		<div class="container">
-            <div class="well-searchbox col-md-10">
-                <form role="form">
-        <!-- Search Field -->
-            <div class="row">
-                <div class="form-group">
-                    <div class="input-group">
-                        <select class="form-control">
-                            <option value="personal loan">Personal Loan</option>
-							<option value="personal loan">Business Loan</option>
-							<option value="personal loan">Construction Loan</option>
-							<option value="personal loan">LRD Loan</option>
-                        </select>
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
-                        </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </form>
-            </div>
-        </div>
-		</div>
-		</section>
-	
+  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
-<!-- Search bar end -->
-<div class="container-fluid apply-online">
-	Apply Online
-</div>
 
-<div class="container">
-
-<div class="container-fluid">
-  <div class="col-md-123">
-    <div class="col-md-12">
-      <div class="col-md-3 nopad">
-       <img src="assets/img/home-loan.jpg" alt="home loan"/>
-		<div class="blue">
-		<h4>Home Loan</h4>
-		<p>LIfe Comes with lots
-		 of choices housing loans
-		and others with all banks</p>
-		<a href="#" class="btn btn-block btn-primary">Read more</a>
-		</div>
-      </div>
-      <div class="col-md-3 nopad">
-       <img src="assets/img/personal-loan.jpg" alt="personal loan"/>
-	   <div class="yellow">
-		<h4>Personal Loan</h4>
-		<p>LIfe Comes with lots
-		 of choices housing loans
-		and others with all banks</p>
-		<a href="#" class="btn btn-block btn-danger">Read more</a>
-		</div>
-      </div>
-	  <div class="col-md-3 nopad">
-        <img src="assets/img/construction-loan.jpg"/>
-		<div class="blue">
-		<h4>Construction Loan</h4>
-		<p>LIfe Comes with lots
-		 of choices housing loans
-		and others with all banks</p>
-		<a href="#" class="btn btn-block btn-danger">Read more</a>
-		</div>
-      </div>
-	  <div class="col-md-3 nopad">
-        <img src="assets/img/lrd-loan.jpg"/>
-		<div class="yellow">
-		<h4>LRD Loan</h4>
-		<p>LIfe Comes with lots
-		 of choices housing loans
-		and others with all banks</p>
-		<a href="#" class="btn btn-block btn-danger">Read more</a>
-		</div>
-      </div>
-    </div>
-    
-  </div>
   
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+
+      
+<div class="container">
+<?php 
+			if(isset($_REQUEST['ins']) == "success"){
+
+$errormessage = "Loan Application Request Sent Succsessfully";
+?>
+<span><p color="red" style="color: green;font-weight: bold;font-size: 16px;
+
+text-align: center;margin-top: 10px;"><?php echo $errormessage;?></p></span>
+<?php 
+}
+?>
+    <form class="well form-horizontal" action="applyloan.php" method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+
+<div class="col-md-12">
+<div class="col-md-8">
+<div class="row">
+  <div class="col-md-6">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="name" placeholder="Enter Name" class="form-control"  type="text">
+    </div>
+</div>
+
+      
+    <div class="col-md-6">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+        <div class="row">
+    <div class="col-md-12">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="loan" class="form-control selectpicker" >
+      <option value=" " >Please select your Loantype</option>
+      <option>Home Loan</option>
+      <option>Personal Loan</option>
+      <option >Construction Loan</option>
+      <option >Business Loan</option>
+      <option >LRD Loan</option>
+      
+    </select>
+  </div>
+</div>
+</div>
+&emsp; 
+<div class="row">
+    <div class="col-md-6">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="Enter Mobile Number" class="form-control" type="text">
+    </div>
   </div>
 
 
+<!-- Text input-->
+      
 
-
-<!-- Footer Static Block start-->
-<section class="common-contact-block">
-	<div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="panel icon-b5" style="height: 236px;"><span class="icons_large"></span>
-            <h4 class="subheader">Apply Online</h4>
-            <p>Click here to sign up now. 
-              </p><p class="text-center"><a id="cta-borrow-bp-applynow" href="#" class="button medium radius ">Apply Now</a>  </p>
-          </div>
-        </div>
-        
-        <div class="col-md-3">
-          <div class="panel icon-c1" style="height: 236px;"><span class="icons_large"></span>
-            <h4 class="subheader">Call Us</h4>
-            <p>Reach us at our 24 hour phone banking hotlines.
-                <a href=""><strong>Call Us »</strong></a> </p>
-          </div>
-        </div>
-        
-        <div class="col-md-3">
-          <div class="panel icon-b1" style="height: 236px;"><span class="icons_large"></span>
-            <h4 class="subheader">Locate Us</h4>
-            <p>Come and meet us near you.
-              <a href="#"><strong>Find a Branch »</strong></a></p>
-          </div>
-        </div>
-
- <div class="col-md-3">
-      <div class="panel icon-c5" style="height: 236px;"><span class="icons_large" style="background:none;"><img src="/in/assets/pws/images/facebook-icon.png" width="32" height="32" alt="Facebook"></span>
-        <h4 class="subheader">We are on Facebook</h4>
-        <p><a href="#" target="_blank"> <strong>Click here</strong></a> to connect with us. 
-        </p>
-        <p>&nbsp; </p>
-      </div>
+    <div class="col-md-6">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="pincode" placeholder="Enter Pincode" class="form-control" type="text">
     </div>
-      </div>
-	</div>
-    </section>
-<!-- Footer Static blocks end -->
-
+  </div>
 </div>
-<!-- Main body Content End-->
-
-<!-- Footer Start -->
-<div>
-<?php include "includes/footer.php";?>
+&emsp; 
+<input type="hidden" name="status" class="form-control" value="Received" id="exampleInputEmail1" placeholder="Loan Amount">
+<input type="hidden" name="message" class="form-control" id="exampleInputEmail1" value="Welcome to Ask me Loan">
+<!-- Text input-->
+ <div class="row">
+    <div class="col-md-6">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="Enter city" class="form-control"  type="text">
+    </div>
+  </div>
+   <div class="col-md-6">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="amount" placeholder="Enter Loan Amount" class="form-control"  type="text">
+    </div>
 </div>
-<!-- Footer End -->
+</div>
+&emsp; 
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
 
-</body>
-</html>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Apply<span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div></div></div>
+    </div><!-- /.container -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+
+
+	<style>
+	#success_message{ display: none;}
+	.col-md-12{
+	padding-top: 30px;
+}
+.col-md-8{
+	//border:1px solid #ccc;
+	padding-top:20px;
+	padding-bottom:10px;
+	border-radius:2px;
+}
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	//background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
+	background:white;
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+}
+
+	</style>
+	<script>
+	  $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: '<p style="color:red;">Please Enter your first name</p>'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your email address</p>'
+                    },
+                    emailAddress: {
+                        message: '<p style="color:red;">Please Enter a valid email address</p>'
+                    }
+                }
+            },
+			loan: {
+                validators: {
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your Loan Type</p>'
+                    },
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your phone number</p>'
+                    },
+                    phone: {
+                        country: 'IN',
+                        message: '<p style="color:red;">Please Enter a vaild phone number</p>'
+                    }
+                }
+            },
+            pincode: {
+                validators: {
+                     stringLength: {
+                        min: 6,
+                    },
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your pincode</p>'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your city</p>'
+                    }
+                }
+            },
+            
+            amount: {
+                validators: {
+                    notEmpty: {
+                        message: '<p style="color:red;">Please Enter your Loan Amount</p>'
+                    },
+                    
+                }
+            },
+          
+            }
+        })
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+
+</script>

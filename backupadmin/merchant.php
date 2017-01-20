@@ -131,7 +131,7 @@ while($result1=mysql_fetch_array($query))
 			<td><?php echo $result1['pincode']; ?></td>
 			<td><?php echo $result1['status']; ?></td>
 			<td align="center"><a class="btn btn-warning btn-minier" href="editloanuser.php?id=<?php echo $result1['id']; ?>" data-toggle="modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit"></i></a> &nbsp;</td>
-			<td><a href="deleteloanuser.php?id=<?php echo $result1['id']; ?>" onclick="return confirm('Are you sure you want to delete the file');"><button class="btn btn-danger btn-xs">Delete</button></a></td>
+			<td><a href="deleteloanuser.php?id=<?php echo $result1['id']; ?>"><button class="btn btn-danger btn-xs">Delete</button></a></td>
 			</tr>
 <?php } ?>
 			</tbody>
