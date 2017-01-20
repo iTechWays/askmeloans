@@ -2,10 +2,10 @@
 include "includes/header.php";
 ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="bootstrap.min.js" type="text/javascript"></script>
-<script src="simple-slider.js"></script>
-<link href="simple-slider.css" rel="stylesheet" type="text/css" />
+<link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="assets/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/simple-slider.js"></script>
+<link href="assets/simple-slider.css" rel="stylesheet" type="text/css" />
 
 
 <div class="row">
