@@ -10,6 +10,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="assets/simple-slider.js"></script>
+<link href="assets/simple-slider.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -63,12 +66,12 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav container-fluid">
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Loan Types</a></li>
-                <li><a href="apply-now.php"><span class="glyphicon glyphicon-earphone"></span> Apply Loan</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> Loan Types</a></li>
+                <li><a href="apply-now.php"><span class="glyphicon glyphicon-edit"></span> Apply Loan</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Loans</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Investments</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Insurance</a></li>
-                <li><a href="emi.php"><span class="glyphicon glyphicon-earphone"></span>Emi Calculator</a></li>
+                <li><a href="emi.php"><span class="glyphicon glyphicon-calendar"></span> Emi Calculator</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Financial Tools</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Financial Tools</a></li>
             </ul>
